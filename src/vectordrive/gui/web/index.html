@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'">
+<title>VectorDrive</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="app">
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-brand">
+      <svg class="nav-brand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h3v3H4zM4 10h3v3H4zM4 16h3v3H4z" fill="currentColor" stroke="none" opacity="0.6"/><path d="M5.5 5.5L12 12M5.5 11.5L12 12M5.5 17.5L12 12"/><circle cx="12" cy="12" r="2" fill="#4ade80" stroke="none"/><path d="M12 12L19 5" stroke-width="2.5"/><path d="M17 5h2v2" stroke-width="2"/></svg>
+      <span>VectorDrive</span>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#/folders" data-route="folders" data-icon="folders" class="nav-item">Folders</a></li>
+      <li><a href="#/search" data-route="search" data-icon="search" class="nav-item">Search</a></li>
+      <li><a href="#/chat" data-route="chat" data-icon="chat" class="nav-item">Chat</a></li>
+      <li><a href="#/overview" data-route="overview" data-icon="overview" class="nav-item">Overview</a></li>
+      <li><a href="#/review" data-route="review" data-icon="review" class="nav-item">Review</a></li>
+      <li><a href="#/logs" data-route="logs" data-icon="logs" class="nav-item">Logs</a></li>
+      <li><a href="#/claude" data-route="claude" data-icon="claude" class="nav-item">Claude Desktop</a></li>
+    </ul>
+    <div class="nav-footer">
+      <a href="#/settings" data-route="settings" data-icon="settings" class="nav-item">Settings</a>
+      <div class="nav-local-badge">100% Local</div>
+    </div>
+  </nav>
+  <main id="main" class="main" tabindex="-1" aria-live="polite">
+    <!-- views/*.js render into here -->
+  </main>
+</div>
+<div id="toast-region" class="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+<div id="job-status-root"></div>
+<div id="dialog-root"></div>
+
+<script src="error-guard.js"></script>
+<script src="icons.js"></script>
+<script src="components.js"></script>
+<script src="job-status.js"></script>
+<script src="router.js"></script>
+<script src="views/overview.js"></script>
+<script src="views/folders.js"></script>
+<script src="views/search.js"></script>
+<script src="views/chat.js"></script>
+<script src="views/logs.js"></script>
+<script src="views/review.js"></script>
+<script src="views/settings.js"></script>
+<script src="views/help.js"></script>
+<script src="views/claude.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

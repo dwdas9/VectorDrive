@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- VectorDrive icon: documents → chunks → embedding origin → searchable vector -->
+
+  <!-- Incoming convergence paths from document chunks to origin (blue, curved) -->
+  <path d="M 200 215 C 330 420, 440 580, 512 700" stroke="#4A90D9" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <path d="M 165 405 C 310 530, 420 640, 512 700" stroke="#4A90D9" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <path d="M 335 255 C 400 430, 470 590, 512 700" stroke="#4A90D9" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Document chunk nodes (blue rounded rectangles) -->
+  <rect x="176" y="190" width="48" height="56" rx="8" fill="#4A90D9"/>
+  <rect x="141" y="380" width="48" height="56" rx="8" fill="#4A90D9"/>
+  <rect x="311" y="230" width="48" height="56" rx="8" fill="#4A90D9"/>
+
+  <!-- Text-line hints on document nodes -->
+  <line x1="186" y1="212" x2="214" y2="212" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="186" y1="224" x2="206" y2="224" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+  <line x1="151" y1="402" x2="179" y2="402" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="151" y1="414" x2="171" y2="414" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+  <line x1="321" y1="252" x2="349" y2="252" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="321" y1="264" x2="341" y2="264" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Vector arrow shaft (violet/purple) -->
+  <line x1="512" y1="700" x2="770" y2="318" stroke="#7E57C2" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- Vector arrowhead (violet/purple, unmistakable) -->
+  <polygon points="840,210 822,354 714,282" fill="#7E57C2"/>
+
+  <!-- Origin dot (green - local processing) -->
+  <circle cx="512" cy="700" r="38" fill="#43A047"/>
+</svg>
