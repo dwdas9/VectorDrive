@@ -1,4 +1,4 @@
-# VectorDrive Version 1 — Final Release Notes
+# VectorDrive Version 1 - Release Notes
 
 **Delivery date:** August 30, 2026
 
